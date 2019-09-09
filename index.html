@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Metas -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+  <meta name="author" content="Vinicius M">
+  <meta name="description" content="Quiz usando API da Marvel" />
+
+    <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Marvel" />
+
+  <!-- JS  -->
+  <script src="assets/js/vendor/jquery-3.2.1.min.js"></script>
+  <script src="assets/js/vendor/crypto-js.min.js"></script>
+  <script src="https://use.fontawesome.com/d6d100fa7e.js"></script>
+  <script type="text/javascript" src="assets/js/main.js"></script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/marvel-favicon.png">
+
+
+  <title>Marvel Quiz</title>	
+</head>
+<body>
+   <span class="loading"></span>
+   <header>
+      <h1>Marvelous Quiz</h1> 
+      <img src="assets/images/marvel-logo.png" width="300" height="100"/>
+    </header>
+    <div class="content">
+    <div class="columns col-left">
+      <figure>
+        <img src="#" alt="" class="character-photo">
+      </figure>
+    </div>
+
+    <div class="columns col-right">
+      <p>Pontuação: <span class="score">0</span></p>
+      <form class="marvel-form">
+        <div class="answer-area">
+          <input type="text" class="character-name" value="" placeholder="O nome é...">
+        </div>
+        <a href="#" class="send-name">Ver resposta</a>
+      </form>
+      <a href="#" class="get-tip">Desisto! Quem é esse? <span class="tip-name"></span></a>
+      <a href="#" class="next">Próximo personagem <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+    </div>
+  </div>
+  <div class="game-over">
+    <h2>Game Over!</h2>
+    <h3>Sua pontuação final é: <span class="score"></span></h3>
+  </div>
+  <footer>
+  </footer>
+</body>
+</html>
